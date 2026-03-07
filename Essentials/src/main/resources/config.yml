@@ -375,11 +375,11 @@ use-nbt-serialization-in-createkit: false
 # Note: 'color' is not an actual sign type; it enables using color codes on signs when the correct permissions are given.
 enabledSigns:
   #- color
-  #- balance
-  #- buy
-  #- free
-  #- sell
-  #- trade
+  - balance
+  - buy
+  - free
+  - sell
+  - trade
   #- enchant
   #- repair
   #- gamemode
