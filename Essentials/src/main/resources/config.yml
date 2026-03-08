@@ -375,11 +375,11 @@ use-nbt-serialization-in-createkit: false
 # Note: 'color' is not an actual sign type; it enables using color codes on signs when the correct permissions are given.
 enabledSigns:
   #- color
-  #- balance
-  #- buy
-  #- free
-  #- sell
-  #- trade
+  - balance
+  - buy
+  - free
+  - sell
+  - trade
   #- enchant
   #- repair
   #- gamemode
@@ -841,7 +841,7 @@ confirm-home-overwrite: false
 # You can control the values of items that are sold to the server by using the /setworth command and 'worth.yml'.
 
 # Defines the balance new players start with.
-starting-balance: 0
+starting-balance: 100
 
 # Defines the cost to use the given commands PER USE.
 # Some commands like /repair have sub-costs. Check the wiki for more information.
@@ -867,7 +867,7 @@ max-money: 10000000000000
 # Set the minimum amount of money a player can have (must be greater than the negative value of max-money).
 # Setting this to 0 will disable overdrafts/loans completely.
 # Players need 'essentials.eco.loan' permission to have a negative balance.
-min-money: -10000
+min-money: -10000000000000
 
 # Enable this to log all interactions with buy/sell/trade signs and the sell command.
 economy-log-enabled: false
